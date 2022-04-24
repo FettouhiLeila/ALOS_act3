@@ -9,32 +9,32 @@ export function get_Donneurs() {
 }
 
 export const get_Donneurs = id => {
-    const podcast = podcasts.find(podcast => Donneurs.id == id)
+    const podcast = Donneurs.find(Donneurs => Donneurs.id == id)
 
-    return podcast
+    return Donneurs
 }
 
 
-export function add_podcast(podcast) {
-    let new_podcasts = [
-        ...podcasts,
+export function add_Donneurs(Donneurs) {
+    let new_Donneurs = [
+        ...Donneurs,
         {
-            ...podcast,
+            ...Donneurs,
             "id": Date.now().toString(36)
         }
     ]
-    const new_data = JSON.stringify(new_podcasts)
+    const new_data = JSON.stringify(new_Donneurs)
 
-    writeFileSync("database/podcasts.json", new_data)
+    writeFileSync("database/db.json", new_data)
 
-    return new_podcasts
+    return new_Donneurs
 }
 
-    const new_data = JSON.stringify(podcasts)
+    const new_data = JSON.stringify(Donneurs)
 
-    writeFileSync("database/podcasts.json", new_data)
+    writeFileSync("database/db.json", new_data)
 
-    return podcasts
+    return Donneurs
 }
 
 export function delete_Donneurs(id) {
