@@ -3,9 +3,6 @@ import {
 } from 'fs'
 import Donneurs from '../../database/db.json'
 
-/**
- * PODCASTS
- */
 
 export function get_Donneurs() {
     return Donneurs
