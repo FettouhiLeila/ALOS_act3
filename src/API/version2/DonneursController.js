@@ -1,4 +1,4 @@
-import Podcast from '../Models/Podcast'
+import Podcast from '../Donneur'
 
 export default {
     get_all: (req, res) => {
