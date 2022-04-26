@@ -1,6 +1,10 @@
 # ALOS_act3
+
+
 Fettouhi Leila, Marouf Nawel
-Comment courir
+
+
+Comment exécuter:
 Installer les dépendances
 
 installation npm
